@@ -14,7 +14,25 @@ fn main() {
     // Vector
 
     let vector_arr = [1, 3, 4];
-    println!("{:?}", vector_arr)
+    println!("{:?}", vector_arr);
+
+    // Conditionals
+    let even_res = is_even(40);
+    if even_res {
+        println!("The numer is even");
+    } else {
+        println!("The number is not even");
+    }
+
+    // For loop
+    for i in 0..100 {
+        println!("{}", i);
+    }
+
+    // Mutability
+    let mut name = String::from("Hey");
+    name.push_str(" There");
+    println!("{}", name);
 }
 
 fn sum(a: u32, b: u32) -> u32 {

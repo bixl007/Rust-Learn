@@ -1,11 +1,9 @@
 # =========================
 # Rust
 # =========================
-/target/
+target
 **/*.rs.bk
-**/*.log
 Cargo.lock
-*.swp
 *.tmp
 *.bak
 
@@ -30,11 +28,10 @@ Cargo.lock
 # =========================
 # Solana (with Anchor)
 # =========================
-/dist/
-/node_modules/
-/target/         # Anchor also creates a target/ dir
-/.anchor/
-/.mpl_cache/
+dist
+node_modules
+.anchor
+.mpl_cache
 
 # Solana wallet files (IMPORTANT: do not push keys!)
 *.json
@@ -60,3 +57,96 @@ secrets/
 Thumbs.db
 *.log
 *.lock
+
+## File system
+desktop.ini
+
+## Editor
+*.swp
+*.swo
+Session.vim
+.cproject
+.idea
+*.iml
+.vscode
+.project
+.vim/
+.helix/
+.zed/
+.favorites.json
+.settings/
+.vs/
+.dir-locals.el
+
+## Tool
+.valgrindrc
+.cargo
+# Included because it is part of the test case
+!/tests/run-make/thumb-none-qemu/example/.cargo
+
+## Configuration
+/bootstrap.toml
+/config.toml
+/Makefile
+config.mk
+config.stamp
+no_llvm_build
+
+## Build
+/dl/
+/doc/
+/inst/
+/llvm/
+/mingw-build/
+/build
+/build-rust-analyzer/
+/unicode-downloads
+/library/target
+/src/bootstrap/target
+/src/ci/citool/target
+/src/tools/x/target
+# Created by `x vendor`
+/vendor
+# Created by default with `src/ci/docker/run.sh`
+/obj/
+# Created by nix dev shell / .envrc
+src/tools/nix-dev-shell/flake.lock
+
+## ICE reports
+rustc-ice-*.txt
+
+## Temporary files
+*~
+\#*
+\#*\#
+.#*
+
+## Tags
+tags
+tags.*
+TAGS
+TAGS.*
+
+## Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+## Node
+package-lock.json
+package.json
+/src/doc/rustc-dev-guide/mermaid.min.js
+
+## Rustdoc GUI tests
+tests/rustdoc-gui/src/**.lock
+
+## direnv
+/.envrc
+/.direnv/
+
+## nix
+/flake.nix
+flake.lock
+/default.nix
+
+# Before adding new lines, see the comment at the top.

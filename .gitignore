@@ -1,0 +1,62 @@
+# =========================
+# Rust
+# =========================
+/target/
+**/*.rs.bk
+**/*.log
+Cargo.lock
+*.swp
+*.tmp
+*.bak
+
+# IntelliJ & VSCode
+.idea/
+.vscode/
+
+
+# Rust compilation artifacts
+*.rlib
+*.dSYM
+*.d
+
+# Rust coverage/debug/test files
+*.profraw
+*.gcda
+*.gcno
+*.gcov
+*.lst
+*.out
+
+# =========================
+# Solana (with Anchor)
+# =========================
+/dist/
+/node_modules/
+/target/         # Anchor also creates a target/ dir
+/.anchor/
+/.mpl_cache/
+
+# Solana wallet files (IMPORTANT: do not push keys!)
+*.json
+*.keypair.json
+id.json
+
+# Anchor-generated IDL files (optional)
+*.idl.json
+
+# =========================
+# Environment and Secrets
+# =========================
+.env
+.env.local
+.env.*.local
+.secret
+secrets/
+
+# =========================
+# System
+# =========================
+.DS_Store
+Thumbs.db
+*.log
+*.lock

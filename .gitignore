@@ -3,7 +3,6 @@
 # =========================
 target
 **/*.rs.bk
-Cargo.lock
 *.tmp
 *.bak
 
@@ -56,7 +55,6 @@ secrets/
 .DS_Store
 Thumbs.db
 *.log
-*.lock
 
 ## File system
 desktop.ini
